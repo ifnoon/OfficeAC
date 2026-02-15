@@ -1,0 +1,43 @@
+{
+    "SDKVersion": 2,
+    "Author": "Roy Antebi",
+    "CodePathMac": "ac-plugin",
+    "Description": "Control office AC via Home Assistant",
+    "Name": "Office AC",
+    "Version": "1.0.0",
+    "Icon": "imgs/plugin",
+    "Category": "Office AC",
+    "CategoryIcon": "imgs/plugin",
+    "OS": [
+        {
+            "Platform": "mac",
+            "MinimumVersion": "10.15"
+        }
+    ],
+    "Software": {
+        "MinimumVersion": "6.0"
+    },
+    "Actions": [
+        {
+            "Icon": "imgs/toggle",
+            "Name": "AC Toggle",
+            "States": [{ "Image": "imgs/toggle", "TitleAlignment": "middle" }],
+            "UUID": "com.royantebi.ac.toggle",
+            "Tooltip": "Toggle AC on/off — shows current temp"
+        },
+        {
+            "Icon": "imgs/tempup",
+            "Name": "Temp +",
+            "States": [{ "Image": "imgs/tempup", "TitleAlignment": "middle" }],
+            "UUID": "com.royantebi.ac.tempup",
+            "Tooltip": "Increase temperature by 0.5°C"
+        },
+        {
+            "Icon": "imgs/tempdown",
+            "Name": "Temp -",
+            "States": [{ "Image": "imgs/tempdown", "TitleAlignment": "middle" }],
+            "UUID": "com.royantebi.ac.tempdown",
+            "Tooltip": "Decrease temperature by 0.5°C"
+        }
+    ]
+}
